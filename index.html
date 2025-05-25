@@ -7,15 +7,15 @@
     <style>
         /* Add background image */
         body {
-            background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FYRRM5BxcZDo%2Fhqdefault.jpg%3Fsqp%3D-oaymwEmCOADEOgC8quKqQMa8AEB-AH-BIAC4AOKAgwIABABGEUgRSh_MA8%3D%26rs%3DAOn4CLC_ux-_lv8ail_sKF8wQvI6teNJSw&f=1&nofb=1&ipt=9750441c0499504839b96ec05175dd9a1394cd3a97a29e9b0a5aa62e8f462c0b');  /* Replace with your image URL */
-            background-size: cover;  /* Ensure the image covers the whole background */
-            background-position: center;  /* Center the image */
-            background-attachment: fixed;  /* Make the background fixed when scrolling */
-            color: white;  /* Change text color for better visibility on background */
-            font-family: Arial, sans-serif;  /* Set font style */
+            background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.2noV3-lGoW1Q1GrwWPYN3wHaEK%26pid%3DApi&f=1&ipt=9c0b0b1e1a44aec7cf8d02d023edc5304cecea26a49938b665e995a728d0f1aa');  /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            height: 100vh;  /* Make the body cover the full screen height */
+            height: 100vh;
         }
 
         /* Style for the h1 element */
@@ -23,6 +23,7 @@
             text-align: center;
             margin-top: 50px;
             font-size: 2em;
+            animation: colorChange 3s infinite alternate;  /* Apply color change animation */
         }
 
         /* Style for the status text */
@@ -30,6 +31,16 @@
             text-align: center;
             font-size: 1.5em;
             margin-top: 20px;
+            animation: colorChange 5s infinite alternate;  /* Apply color change animation */
+        }
+
+        /* CSS Keyframes for changing text color */
+        @keyframes colorChange {
+            0% { color: #ff6347; }  /* Tomato */
+            25% { color: #32cd32; } /* LimeGreen */
+            50% { color: #1e90ff; } /* DodgerBlue */
+            75% { color: #ff1493; } /* DeepPink */
+            100% { color: #ffd700; } /* Gold */
         }
     </style>
 </head>
